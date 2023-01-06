@@ -27,7 +27,7 @@ Serving the HTML pages.
 Testing the webserver
 
 # PROGRAM:
-python
+```python
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = """
@@ -52,7 +52,7 @@ class HelloHandler(BaseHTTPRequestHandler):
 server_address=('',80)
 httpd = HTTPServer(server_address, HelloHandler)
 httpd.serve_forever()
-
+```
 
 # OUTPUT:
 ![model](/WhatsApp%20Image%202023-01-06%20at%201.15.22%20PM.jpeg)
